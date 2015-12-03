@@ -6,7 +6,7 @@
 %global pypi_name os-brick
 
 Name:           python-%{pypi_name}
-Version:        0.5.0
+Version:        0.6.0
 Release:        1%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
@@ -24,12 +24,13 @@ Summary:        OpenStack Cinder brick library for managing local volume attache
 Provides:       os-brick = %{version}-%{release}
 
 Requires:       python-babel >= 1.3
-Requires:       python-oslo-serialization >= 1.4.0
+Requires:       python-eventlet >= 0.17.4
+Requires:       python-oslo-serialization >= 1.10.0
 Requires:       python-oslo-concurrency >= 2.3.0
 Requires:       python-oslo-i18n >= 1.5.0
 Requires:       python-oslo-log >= 1.8.0
 Requires:       python-oslo-service >= 0.7.0
-Requires:       python-oslo-utils >= 2.0.0
+Requires:       python-oslo-utils >= 2.8.0
 Requires:       python-requests >= 2.5.2
 Requires:       python-retrying
 Requires:       python-six >= 1.9.0
@@ -55,12 +56,12 @@ Summary:        OpenStack Cinder brick library for managing local volume attache
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
 Requires:       python3-babel >= 1.3
-Requires:       python3-oslo-serialization >= 1.4.0
+Requires:       python3-oslo-serialization >= 1.10.0
 Requires:       python3-oslo-concurrency >= 2.3.0
 Requires:       python3-oslo-i18n >= 1.5.0
 Requires:       python3-oslo-log >= 1.8.0
 Requires:       python3-oslo-service >= 0.7.0
-Requires:       python3-oslo-utils >= 2.0.0
+Requires:       python3-oslo-utils >= 2.8.0
 Requires:       python3-requests >= 2.5.2
 Requires:       python3-retrying
 Requires:       python3-six >= 1.9.0
@@ -122,6 +123,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %endif
 
 %changelog
+* Thu Dec 3 2015 Javier Peña <jpena@redhat.com> - 0.6.0-1
+- Bumped to upstream 0.6.0.
+- Updated requirements
 * Wed Sep 30 2015 Javier Peña <jpena@redhat.com> - 0.5.0-1
 - Bumped to upstream 0.5.0.
 - Disabling python3 subpkg due to missing dependencies.
