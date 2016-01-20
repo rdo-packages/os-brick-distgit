@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-dfce7981d93fa24f84fb35866a577d312ab2d441	os-brick-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+b6096c69364cc75694b6ba76d1edcc00b16394ec       	os-brick-distgit-core
+dfce7981d93fa24f84fb35866a577d312ab2d441        	os-brick-distgit-ptl
+global:Registered-Users		Registered Users
