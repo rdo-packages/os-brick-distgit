@@ -7,7 +7,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.7.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
 License:        ASL 2.0
@@ -123,6 +123,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %endif
 
 %changelog
+* Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.7.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
 * Mon Dec 21 2015 Javier Peña <jpena@redhat.com> - 0.7.0-1
 - Bumped to upstream 0.7.0.
 * Thu Dec 3 2015 Javier Peña <jpena@redhat.com> - 0.6.0-1
