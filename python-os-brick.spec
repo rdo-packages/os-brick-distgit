@@ -7,7 +7,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.7.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
 License:        ASL 2.0
@@ -25,12 +25,12 @@ Provides:       os-brick = %{version}-%{release}
 
 Requires:       python-babel >= 1.3
 Requires:       python-eventlet >= 0.17.4
-Requires:       python-oslo-serialization >= 1.10.0
+Requires:       python-oslo-serialization
 Requires:       python-oslo-concurrency >= 2.3.0
 Requires:       python-oslo-i18n >= 1.5.0
 Requires:       python-oslo-log >= 1.8.0
 Requires:       python-oslo-service >= 0.7.0
-Requires:       python-oslo-utils >= 2.8.0
+Requires:       python-oslo-utils
 Requires:       python-requests >= 2.5.2
 Requires:       python-retrying
 Requires:       python-six >= 1.9.0
@@ -56,12 +56,12 @@ Summary:        OpenStack Cinder brick library for managing local volume attache
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
 Requires:       python3-babel >= 1.3
-Requires:       python3-oslo-serialization >= 1.10.0
+Requires:       python3-oslo-serialization
 Requires:       python3-oslo-concurrency >= 2.3.0
 Requires:       python3-oslo-i18n >= 1.5.0
 Requires:       python3-oslo-log >= 1.8.0
 Requires:       python3-oslo-service >= 0.7.0
-Requires:       python3-oslo-utils >= 2.8.0
+Requires:       python3-oslo-utils
 Requires:       python3-requests >= 2.5.2
 Requires:       python3-retrying
 Requires:       python3-six >= 1.9.0
@@ -123,6 +123,10 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %endif
 
 %changelog
+* Wed Feb 10 2016 Javier Peña <jpena@redhat.com> - 0.7.0-3
+- Unset minimum version for dependencies on python-oslo-utils and python-oslo-serialization,
+  since they are not available in Rawhide yet.
+
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.7.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 
