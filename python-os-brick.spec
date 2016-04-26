@@ -34,6 +34,7 @@ Requires:       python-oslo-utils >= 2.0.0
 Requires:       python-requests >= 2.5.2
 Requires:       python-retrying
 Requires:       python-six >= 1.9.0
+Requires:       python-oslo-privsep >= 1.5.0
 
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr >= 1.6.0
@@ -67,6 +68,7 @@ Requires:       python3-oslo-utils >= 2.0.0
 Requires:       python3-requests >= 2.5.2
 Requires:       python3-retrying
 Requires:       python3-six >= 1.9.0
+Requires:       python3-oslo-privsep >= 1.5.0
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr >= 1.6.0
