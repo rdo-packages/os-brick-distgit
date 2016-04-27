@@ -48,6 +48,7 @@ BuildRequires:  python-oslo-sphinx >= 2.5.0
 BuildRequires:  python-requests >= 2.5.2
 BuildRequires:  python-six >= 1.9.0
 BuildRequires:  python-setuptools
+BuildRequires:  python-oslo-privsep >= 1.5.0
 
 %description -n python2-%{pypi_name}
 OpenStack Cinder brick library for managing local volume attaches
@@ -82,6 +83,7 @@ BuildRequires:  python3-oslo-sphinx >= 2.5.0
 BuildRequires:  python3-requests >= 2.5.2
 BuildRequires:  python3-six >= 1.9.0
 BuildRequires:  python3-setuptools
+BuildRequires:  python3-oslo-privsep >= 1.5.0
 
 %description -n python3-%{pypi_name}
 OpenStack Cinder brick library for managing local volume attaches
