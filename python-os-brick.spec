@@ -35,8 +35,10 @@ Requires:       python-requests >= 2.5.2
 Requires:       python-retrying
 Requires:       python-six >= 1.9.0
 Requires:       python-oslo-privsep >= 1.5.0
+Requires:       python-os-win
 
 BuildRequires:  python2-devel
+BuildRequires:  python-ddt
 BuildRequires:  python-pbr >= 1.6.0
 BuildRequires:  python-reno
 BuildRequires:  python-sphinx
@@ -70,8 +72,10 @@ Requires:       python3-requests >= 2.5.2
 Requires:       python3-retrying
 Requires:       python3-six >= 1.9.0
 Requires:       python3-oslo-privsep >= 1.5.0
+Requires:       python3-os-win
 
 BuildRequires:  python3-devel
+BuildRequires:  python3-ddt
 BuildRequires:  python3-pbr >= 1.6.0
 BuildRequires:  python3-reno
 BuildRequires:  python3-sphinx
