@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %if 0%{?fedora}
 # There are some missing deps
 %global with_python3 0
