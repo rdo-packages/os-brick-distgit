@@ -125,6 +125,7 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %doc html README.rst
 %{python2_sitelib}/os_brick*
 %{_datarootdir}/%{pypi_name}
+%exclude %{python2_sitelib}/os_brick/tests
 
 %if 0%{?with_python3}
 %files -n python3-%{pypi_name}
@@ -132,6 +133,7 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %doc html README.rst
 %{python3_sitelib}/os_brick*
 %{_datarootdir}/%{pypi_name}
+%exclude %{python3_sitelib}/os_brick/tests
 %endif
 
 %changelog
