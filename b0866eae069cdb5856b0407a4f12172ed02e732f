@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab895d6_62ccc736",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-01-17T00:02:18Z",
+      "side": 1,
+      "message": "Then it should be added to BuildRequires, once we are ready to enable %check to run unittests during rpmbuild.",
+      "revId": "b0866eae069cdb5856b0407a4f12172ed02e732f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
