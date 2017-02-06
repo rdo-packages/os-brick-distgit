@@ -29,14 +29,14 @@ Requires:       python-eventlet >= 0.18.2
 Requires:       python-oslo-serialization >= 1.10.0
 Requires:       python-oslo-concurrency >= 3.8.0
 Requires:       python-oslo-i18n >= 2.1.0
-Requires:       python-oslo-log >= 1.14.0
+Requires:       python-oslo-log >= 3.11.0
 Requires:       python-oslo-service >= 1.10.0
-Requires:       python-oslo-utils >= 3.16.0
+Requires:       python-oslo-utils >= 3.18.0
 Requires:       python-requests >= 2.10.0
 Requires:       python-retrying
 Requires:       python-six >= 1.9.0
 Requires:       python-oslo-privsep >= 1.9.0
-Requires:       python-os-win
+Requires:       python-os-win >= 1.4.0
 
 BuildRequires:  python2-devel
 BuildRequires:  python-ddt
