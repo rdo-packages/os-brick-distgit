@@ -29,9 +29,9 @@ Requires:       python-eventlet >= 0.18.2
 Requires:       python-oslo-serialization >= 1.10.0
 Requires:       python-oslo-concurrency >= 3.8.0
 Requires:       python-oslo-i18n >= 2.1.0
-Requires:       python-oslo-log >= 3.11.0
+Requires:       python-oslo-log >= 3.22.0
 Requires:       python-oslo-service >= 1.10.0
-Requires:       python-oslo-utils >= 3.18.0
+Requires:       python-oslo-utils >= 3.20.0
 Requires:       python-requests >= 2.10.0
 Requires:       python-retrying
 Requires:       python-six >= 1.9.0
@@ -40,7 +40,7 @@ Requires:       python-os-win >= 1.4.0
 
 BuildRequires:  python2-devel
 BuildRequires:  python-ddt
-BuildRequires:  python-pbr >= 1.6.0
+BuildRequires:  python-pbr >= 2.0.0
 BuildRequires:  python-reno
 BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-concurrency  >= 3.8.0
@@ -66,18 +66,18 @@ Requires:       python3-eventlet >= 0.18.2
 Requires:       python3-oslo-serialization >= 1.10.0
 Requires:       python3-oslo-concurrency >= 3.8.0
 Requires:       python3-oslo-i18n >= 2.1.0
-Requires:       python3-oslo-log >= 1.14.0
+Requires:       python3-oslo-log >= 3.22.0
 Requires:       python3-oslo-service >= 1.10.0
-Requires:       python3-oslo-utils >= 3.16.0
+Requires:       python3-oslo-utils >= 3.20.0
 Requires:       python3-requests >= 2.10.0
 Requires:       python3-retrying
 Requires:       python3-six >= 1.9.0
-Requires:       python3-oslo-privsep >= 1.5.0
+Requires:       python3-oslo-privsep >= 1.9.0
 Requires:       python3-os-win
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
-BuildRequires:  python3-pbr >= 1.6.0
+BuildRequires:  python3-pbr >= 2.0.0
 BuildRequires:  python3-reno
 BuildRequires:  python3-sphinx
 BuildRequires:  python3-oslo-concurrency  >= 3.8.0
@@ -88,7 +88,7 @@ BuildRequires:  python3-oslo-sphinx >= 2.5.0
 BuildRequires:  python3-requests >= 2.10.0
 BuildRequires:  python3-six >= 1.9.0
 BuildRequires:  python3-setuptools
-BuildRequires:  python3-oslo-privsep >= 1.5.0
+BuildRequires:  python3-oslo-privsep >= 1.9.0
 
 %description -n python3-%{pypi_name}
 OpenStack Cinder brick library for managing local volume attaches
