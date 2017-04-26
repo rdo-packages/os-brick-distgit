@@ -7,7 +7,7 @@
 %global pypi_name os-brick
 
 Name:           python-%{pypi_name}
-Version:        1.6.1
+Version:        1.6.2
 Release:        1%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
@@ -137,6 +137,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %endif
 
 %changelog
+* Wed Apr 26 2017 Alfredo Moralejo <amoralej@redhat.com> 1.6.2-1
+- Update to 1.6.2
+
 * Wed Sep 14 2016 Haikel Guemar <hguemar@fedoraproject.org> 1.6.1-1
 - Update to 1.6.1
 
