@@ -36,7 +36,7 @@ Requires:       python-requests >= 2.10.0
 Requires:       python-retrying
 Requires:       python-six >= 1.9.0
 Requires:       python-oslo-privsep >= 1.9.0
-Requires:       python-os-win >= 1.4.0
+Requires:       python-os-win >= 2.0.0
 
 BuildRequires:  python2-devel
 BuildRequires:  python-ddt
