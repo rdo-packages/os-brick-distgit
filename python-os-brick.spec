@@ -137,3 +137,4 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/os-brick/commit/?id=b2cc3c99f77b96116aa9ba9ace4c7a9704cd5efc
