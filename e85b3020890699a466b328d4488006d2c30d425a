@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_efac308f",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-08-09T14:59:49Z",
+      "side": 1,
+      "message": "Please do not remove oslo-sphinx for now, so we can use the same spec to build centos7-master and centos7-master-head packages.",
+      "revId": "e85b3020890699a466b328d4488006d2c30d425a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
