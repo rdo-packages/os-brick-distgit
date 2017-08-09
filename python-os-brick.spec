@@ -41,6 +41,7 @@ Requires:       python-os-win >= 2.0.0
 BuildRequires:  python2-devel
 BuildRequires:  python-ddt
 BuildRequires:  python-pbr >= 2.0.0
+BuildRequires:  git
 BuildRequires:  python-reno
 BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-concurrency  >= 3.8.0
@@ -48,6 +49,9 @@ BuildRequires:  python-oslo-i18n >= 2.1.0
 BuildRequires:  python-oslo-log >= 1.14.0
 BuildRequires:  python-oslo-service >= 1.10.0
 BuildRequires:  python-oslo-sphinx >= 2.5.0
+BuildRequires:  python-openstackdocstheme
+BuildRequires:  python-retrying
+BuildRequires:  python-os-win
 BuildRequires:  python-requests >= 2.10.0
 BuildRequires:  python-six >= 1.9.0
 BuildRequires:  python-setuptools
@@ -85,6 +89,9 @@ BuildRequires:  python3-oslo-i18n >= 2.1.0
 BuildRequires:  python3-oslo-log >= 1.14.0
 BuildRequires:  python3-oslo-service >= 1.10.0
 BuildRequires:  python3-oslo-sphinx >= 2.5.0
+BuildRequires:  python3-openstackdocstheme
+BuildRequires:  python3-retrying
+BuildRequires:  python3-os-win
 BuildRequires:  python3-requests >= 2.10.0
 BuildRequires:  python3-six >= 1.9.0
 BuildRequires:  python3-setuptools
@@ -96,7 +103,7 @@ OpenStack Cinder brick library for managing local volume attaches
 %endif
 
 %prep
-%setup -q -n %{pypi_name}-%{upstream_version}
+%autosetup -n %{pypi_name}-%{upstream_version} -S git
 
 
 %build
@@ -108,9 +115,9 @@ OpenStack Cinder brick library for managing local volume attaches
 %install
 %py2_install
 # generate html docs
-sphinx-build doc/source html
+%{__python2} setup.py build_sphinx -b html
 # remove the sphinx-build leftovers
-rm -rf html/.{doctrees,buildinfo}
+rm -rf doc/build/html/.{doctrees,buildinfo}
 
 %if 0%{?with_python3}
 %py3_install
@@ -122,7 +129,7 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 
 %files -n python2-%{pypi_name}
 %license LICENSE
-%doc html README.rst
+%doc doc/build/html README.rst
 %{python2_sitelib}/os_brick*
 %{_datarootdir}/%{pypi_name}
 %exclude %{python2_sitelib}/os_brick/tests
@@ -130,7 +137,7 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %if 0%{?with_python3}
 %files -n python3-%{pypi_name}
 %license LICENSE
-%doc html README.rst
+%doc doc/build/html README.rst
 %{python3_sitelib}/os_brick*
 %{_datarootdir}/%{pypi_name}
 %exclude %{python3_sitelib}/os_brick/tests
