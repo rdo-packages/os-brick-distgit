@@ -16,6 +16,24 @@
       "revId": "e85b3020890699a466b328d4488006d2c30d425a",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_2fb638dd",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-08-09T15:02:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a890539_efac308f",
+      "revId": "e85b3020890699a466b328d4488006d2c30d425a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
