@@ -6,6 +6,9 @@
 
 %global pypi_name os-brick
 
+%global common_desc \
+OpenStack Cinder brick library for managing local volume attaches
+
 Name:           python-%{pypi_name}
 Version:        XXX
 Release:        XXX
@@ -17,7 +20,7 @@ Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{versi
 BuildArch:      noarch
 
 %description
-OpenStack Cinder brick library for managing local volume attaches
+%{common_desc}
 
 %package -n python2-%{pypi_name}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
@@ -59,7 +62,7 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-oslo-privsep >= 1.9.0
 
 %description -n python2-%{pypi_name}
-OpenStack Cinder brick library for managing local volume attaches
+%{common_desc}
 
 %if 0%{?with_python3}
 %package -n python3-%{pypi_name}
@@ -100,7 +103,7 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-oslo-privsep >= 1.9.0
 
 %description -n python3-%{pypi_name}
-OpenStack Cinder brick library for managing local volume attaches
+%{common_desc}
 
 %endif
 
