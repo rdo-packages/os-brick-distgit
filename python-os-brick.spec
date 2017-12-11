@@ -51,8 +51,6 @@ BuildRequires:  python-oslo-concurrency  >= 3.8.0
 BuildRequires:  python-oslo-i18n >= 2.1.0
 BuildRequires:  python-oslo-log >= 1.14.0
 BuildRequires:  python-oslo-service >= 1.10.0
-# FIXME: remove following line when a new release including https://review.openstack.org/#/c/479644/ is in u-c
-BuildRequires:  python-oslo-sphinx >= 2.5.0
 BuildRequires:  python-openstackdocstheme
 BuildRequires:  python-retrying
 BuildRequires:  python-os-win
@@ -92,8 +90,6 @@ BuildRequires:  python3-oslo-concurrency  >= 3.8.0
 BuildRequires:  python3-oslo-i18n >= 2.1.0
 BuildRequires:  python3-oslo-log >= 1.14.0
 BuildRequires:  python3-oslo-service >= 1.10.0
-# FIXME: remove following line when a new release including https://review.openstack.org/#/c/479644/ is in u-c
-BuildRequires:  python3-oslo-sphinx >= 2.5.0
 BuildRequires:  python3-openstackdocstheme
 BuildRequires:  python3-retrying
 BuildRequires:  python3-os-win
