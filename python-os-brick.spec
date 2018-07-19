@@ -45,6 +45,7 @@ Requires:       python2-retrying
 Requires:       python-retrying
 %endif
 Requires:       device-mapper-multipath
+Requires:       sg3_utils
 
 BuildRequires:  python2-devel
 BuildRequires:  python2-ddt
@@ -90,6 +91,7 @@ Requires:       python3-six >= 1.10.0
 Requires:       python3-oslo-privsep >= 1.23.0
 Requires:       python3-os-win
 Requires:       device-mapper-multipath
+Requires:       sg3_utils
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
