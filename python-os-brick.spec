@@ -45,6 +45,7 @@ Requires:       python2-retrying
 Requires:       python-retrying
 %endif
 Requires:       device-mapper-multipath
+Requires:       sg3_utils
 
 BuildRequires:  python2-devel
 BuildRequires:  python2-ddt
@@ -90,6 +91,7 @@ Requires:       python3-six >= 1.10.0
 Requires:       python3-oslo-privsep >= 1.23.0
 Requires:       python3-os-win
 Requires:       device-mapper-multipath
+Requires:       sg3_utils
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
@@ -155,6 +157,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %endif
 
 %changelog
+* Tue Dec 11 2018 Eric Harney <eharney@redhat.com> 2.3.4-2
+- Add dependency on sg3_utils
+
 * Fri Oct 12 2018 RDO <dev@lists.rdoproject.org> 2.3.4-1
 - Update to 2.3.4
 
