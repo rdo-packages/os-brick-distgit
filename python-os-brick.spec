@@ -1,9 +1,15 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
-%if 0%{?fedora}
-# There are some missing deps
-%global with_python3 1
+# Macros for py2/py3 compatibility
+%if 0%{?fedora} || 0%{?rhel} > 7
+%global pyver %{python3_pkgversion}
+%else
+%global pyver 2
 %endif
-
+%global pyver_bin python%{pyver}
+%global pyver_sitelib %python%{pyver}_sitelib
+%global pyver_install %py%{pyver}_install
+%global pyver_build %py%{pyver}_build
+# End of macros for py2/py3 compatibility
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global pypi_name os-brick
 
 %global common_desc \
@@ -22,138 +28,83 @@ BuildArch:      noarch
 %description
 %{common_desc}
 
-%package -n python2-%{pypi_name}
+%package -n python%{pyver}-%{pypi_name}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
-%{?python_provide:%python_provide python2-%{pypi_name}}
+%{?python_provide:%python_provide python%{pyver}-%{pypi_name}}
 Provides:       os-brick = %{version}-%{release}
 
-Requires:       python2-pbr
-Requires:       python2-babel >= 2.3.4
-Requires:       python2-eventlet >= 0.18.2
-Requires:       python2-oslo-concurrency >= 3.26.0
-Requires:       python2-oslo-i18n >= 3.15.3
-Requires:       python2-oslo-log >= 3.36.0
-Requires:       python2-oslo-service >= 1.24.0
-Requires:       python2-oslo-utils >= 3.33.0
-Requires:       python2-requests >= 2.14.2
-Requires:       python2-six >= 1.10.0
-Requires:       python2-oslo-privsep >= 1.23.0
-Requires:       python2-os-win >= 3.0.0
-%if 0%{?fedora} > 0
-Requires:       python2-retrying
-%else
+Requires:       python%{pyver}-pbr
+Requires:       python%{pyver}-babel >= 2.3.4
+Requires:       python%{pyver}-eventlet >= 0.18.2
+Requires:       python%{pyver}-oslo-concurrency >= 3.26.0
+Requires:       python%{pyver}-oslo-i18n >= 3.15.3
+Requires:       python%{pyver}-oslo-log >= 3.36.0
+Requires:       python%{pyver}-oslo-service >= 1.24.0
+Requires:       python%{pyver}-oslo-utils >= 3.33.0
+Requires:       python%{pyver}-requests >= 2.14.2
+Requires:       python%{pyver}-six >= 1.10.0
+Requires:       python%{pyver}-oslo-privsep >= 1.23.0
+Requires:       python%{pyver}-os-win >= 3.0.0
+Requires:       device-mapper-multipath
+Requires:       sg3_utils
+
+# Handle python2 exception
+%if %{pyver} == 2
 Requires:       python-retrying
-%endif
-Requires:       device-mapper-multipath
-Requires:       sg3_utils
-
-BuildRequires:  python2-devel
-BuildRequires:  python2-ddt
-BuildRequires:  python2-pbr >= 2.0.0
-BuildRequires:  git
-BuildRequires:  python2-reno
-BuildRequires:  python2-sphinx
-BuildRequires:  python2-oslo-concurrency  >= 3.8.0
-BuildRequires:  python2-oslo-i18n >= 3.15.3
-BuildRequires:  python2-oslo-log >= 3.36.0
-BuildRequires:  python2-oslo-service >= 1.24.0
-BuildRequires:  python2-openstackdocstheme
-BuildRequires:  python2-os-win
-BuildRequires:  python2-requests >= 2.14.2
-BuildRequires:  python2-six >= 1.10.0
-BuildRequires:  python2-setuptools
-BuildRequires:  python2-oslo-privsep >= 1.23.0
-%if 0%{?fedora} > 0
-BuildRequires:  python2-retrying
 %else
+Requires:       python%{pyver}-retrying
+%endif
+
+BuildRequires:  python%{pyver}-devel
+BuildRequires:  python%{pyver}-ddt
+BuildRequires:  python%{pyver}-pbr >= 2.0.0
+BuildRequires:  git
+BuildRequires:  python%{pyver}-reno
+BuildRequires:  python%{pyver}-sphinx
+BuildRequires:  python%{pyver}-oslo-concurrency  >= 3.8.0
+BuildRequires:  python%{pyver}-oslo-i18n >= 3.15.3
+BuildRequires:  python%{pyver}-oslo-log >= 3.36.0
+BuildRequires:  python%{pyver}-oslo-service >= 1.24.0
+BuildRequires:  python%{pyver}-openstackdocstheme
+BuildRequires:  python%{pyver}-os-win
+BuildRequires:  python%{pyver}-requests >= 2.14.2
+BuildRequires:  python%{pyver}-six >= 1.10.0
+BuildRequires:  python%{pyver}-setuptools
+BuildRequires:  python%{pyver}-oslo-privsep >= 1.23.0
+
+# Handle python2 exception
+%if %{pyver} == 2
 BuildRequires:  python-retrying
+%else
+BuildRequires:  python%{pyver}-retrying
 %endif
 
-%description -n python2-%{pypi_name}
+%description -n python%{pyver}-%{pypi_name}
 %{common_desc}
-
-%if 0%{?with_python3}
-%package -n python3-%{pypi_name}
-Summary:        OpenStack Cinder brick library for managing local volume attaches
-%{?python_provide:%python_provide python3-%{pypi_name}}
-
-Requires:       python3-pbr
-Requires:       python3-babel >= 2.3.4
-Requires:       python3-eventlet >= 0.18.2
-Requires:       python3-oslo-concurrency >= 3.26.0
-Requires:       python3-oslo-i18n >= 3.15.3
-Requires:       python3-oslo-log >= 3.36.0
-Requires:       python3-oslo-service >= 1.24.0
-Requires:       python3-oslo-utils >= 3.33.0
-Requires:       python3-requests >= 2.14.2
-Requires:       python3-retrying
-Requires:       python3-six >= 1.10.0
-Requires:       python3-oslo-privsep >= 1.23.0
-Requires:       python3-os-win
-Requires:       device-mapper-multipath
-Requires:       sg3_utils
-
-BuildRequires:  python3-devel
-BuildRequires:  python3-ddt
-BuildRequires:  python3-pbr >= 2.0.0
-BuildRequires:  python3-reno
-BuildRequires:  python3-sphinx
-BuildRequires:  python3-oslo-concurrency  >= 3.8.0
-BuildRequires:  python3-oslo-i18n >= 3.15.3
-BuildRequires:  python3-oslo-log >= 3.36.0
-BuildRequires:  python3-oslo-service >= 1.24.0
-BuildRequires:  python3-openstackdocstheme
-BuildRequires:  python3-retrying
-BuildRequires:  python3-os-win
-BuildRequires:  python3-requests >= 2.14.2
-BuildRequires:  python3-six >= 1.10.0
-BuildRequires:  python3-setuptools
-BuildRequires:  python3-oslo-privsep >= 1.23.0
-
-%description -n python3-%{pypi_name}
-%{common_desc}
-
-%endif
 
 %prep
 %autosetup -n %{pypi_name}-%{upstream_version} -S git
 
 
 %build
-%py2_build
-%if 0%{?with_python3}
-%py3_build
-%endif
+%{pyver_build}
 
 %install
-%py2_install
+%{pyver_install}
 # generate html docs
-%{__python2} setup.py build_sphinx -b html
-# remove the sphinx-build leftovers
+%{pyver_bin} setup.py build_sphinx -b html
+# remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
-
-%if 0%{?with_python3}
-%py3_install
-%endif
 
 # Move config files to proper location
 install -d -m 755 %{buildroot}%{_datarootdir}/%{pypi_name}/rootwrap
 mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir}/%{pypi_name}/rootwrap
 
-%files -n python2-%{pypi_name}
+%files -n python%{pyver}-%{pypi_name}
 %license LICENSE
 %doc doc/build/html README.rst
-%{python2_sitelib}/os_brick*
+%{pyver_sitelib}/os_brick*
 %{_datarootdir}/%{pypi_name}
-%exclude %{python2_sitelib}/os_brick/tests
-
-%if 0%{?with_python3}
-%files -n python3-%{pypi_name}
-%license LICENSE
-%doc doc/build/html README.rst
-%{python3_sitelib}/os_brick*
-%{_datarootdir}/%{pypi_name}
-%exclude %{python3_sitelib}/os_brick/tests
-%endif
+%exclude %{pyver_sitelib}/os_brick/tests
 
 %changelog
