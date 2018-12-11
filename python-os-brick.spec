@@ -23,6 +23,7 @@ Summary:        OpenStack Cinder brick library for managing local volume attache
 License:        ASL 2.0
 URL:            http://www.openstack.org/
 Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+# patches_ignore=DROP-IN-RPM
 BuildArch:      noarch
 
 %description
