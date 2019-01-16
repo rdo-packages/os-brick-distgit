@@ -12,6 +12,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global pypi_name os-brick
 
+%global with_doc 1
+
 %global common_desc \
 OpenStack Cinder brick library for managing local volume attaches
 
@@ -60,17 +62,20 @@ BuildRequires:  python%{pyver}-ddt
 BuildRequires:  python%{pyver}-pbr >= 2.0.0
 BuildRequires:  git
 BuildRequires:  python%{pyver}-reno
-BuildRequires:  python%{pyver}-sphinx
 BuildRequires:  python%{pyver}-oslo-concurrency  >= 3.8.0
 BuildRequires:  python%{pyver}-oslo-i18n >= 3.15.3
 BuildRequires:  python%{pyver}-oslo-log >= 3.36.0
 BuildRequires:  python%{pyver}-oslo-service >= 1.24.0
-BuildRequires:  python%{pyver}-openstackdocstheme
 BuildRequires:  python%{pyver}-os-win
 BuildRequires:  python%{pyver}-requests >= 2.14.2
 BuildRequires:  python%{pyver}-six >= 1.10.0
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  python%{pyver}-oslo-privsep >= 1.23.0
+
+%if 0%{?with_doc}
+BuildRequires:  python%{pyver}-openstackdocstheme
+BuildRequires:  python%{pyver}-sphinx
+%endif
 
 # Handle python2 exception
 %if %{pyver} == 2
@@ -91,10 +96,13 @@ BuildRequires:  python%{pyver}-retrying
 
 %install
 %{pyver_install}
+
+%if 0%{?with_doc}
 # generate html docs
 %{pyver_bin} setup.py build_sphinx -b html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+%endif
 
 # Move config files to proper location
 install -d -m 755 %{buildroot}%{_datarootdir}/%{pypi_name}/rootwrap
@@ -102,7 +110,10 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 
 %files -n python%{pyver}-%{pypi_name}
 %license LICENSE
-%doc doc/build/html README.rst
+%if 0%{?with_doc}
+%doc doc/build/html
+%endif
+%doc README.rst
 %{pyver_sitelib}/os_brick*
 %{_datarootdir}/%{pypi_name}
 %exclude %{pyver_sitelib}/os_brick/tests
