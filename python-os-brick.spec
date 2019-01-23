@@ -49,6 +49,7 @@ Requires:       python%{pyver}-oslo-privsep >= 1.23.0
 Requires:       python%{pyver}-os-win >= 3.0.0
 Requires:       device-mapper-multipath
 Requires:       sg3_utils
+Requires:       sysfsutils
 
 # Handle python2 exception
 %if %{pyver} == 2
