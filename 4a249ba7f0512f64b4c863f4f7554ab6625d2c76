@@ -1,0 +1,9 @@
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Code-Review+2: Eric Harney <eharney@redhat.com>
+Workflow+1: Eric Harney <eharney@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 25 Jan 2019 16:17:24 +0000
+Reviewed-on: https://review.rdoproject.org/r/18513
+Project: openstack/os-brick-distgit
+Branch: refs/heads/queens-rdo
