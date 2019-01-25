@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "5ad0253b_acfc203f",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 439
+      },
+      "writtenOn": "2019-01-25T13:19:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ad0253b_0c5d54e9",
+      "range": {
+        "startLine": 14,
+        "startChar": 16,
+        "endLine": 14,
+        "endChar": 17
+      },
+      "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ad0253b_ace7803f",
         "filename": "python-os-brick.spec",
         "patchSetId": 1
@@ -72,6 +96,30 @@
     },
     {
       "key": {
+        "uuid": "5ad0253b_ec02183e",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 439
+      },
+      "writtenOn": "2019-01-25T13:19:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ad0253b_ace7803f",
+      "range": {
+        "startLine": 161,
+        "startChar": 57,
+        "endLine": 161,
+        "endChar": 58
+      },
+      "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ad0253b_ec72187c",
         "filename": "python-os-brick.spec",
         "patchSetId": 1
@@ -83,6 +131,24 @@
       "writtenOn": "2019-01-25T08:09:43Z",
       "side": 1,
       "message": "-2 was never built so you can add the note about sg3_utils here and remove the previous note about 2.3.4-2.",
+      "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad0253b_ccff5c33",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 439
+      },
+      "writtenOn": "2019-01-25T13:19:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ad0253b_ec72187c",
       "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
