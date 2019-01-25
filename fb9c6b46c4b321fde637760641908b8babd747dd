@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ad0253b_ccdabc78",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-01-25T07:02:56Z",
+      "side": 1,
+      "message": "i think 2 is fine as 2.3.4-2 is not build yet, it was missed as per comments:- https://review.rdoproject.org/r/#/c/14900",
+      "range": {
+        "startLine": 14,
+        "startChar": 16,
+        "endLine": 14,
+        "endChar": 17
+      },
+      "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad0253b_ace7803f",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-01-25T07:02:56Z",
+      "side": 1,
+      "message": "2",
+      "range": {
+        "startLine": 161,
+        "startChar": 57,
+        "endLine": 161,
+        "endChar": 58
+      },
+      "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
