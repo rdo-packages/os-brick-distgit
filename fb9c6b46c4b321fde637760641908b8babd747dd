@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5ad0253b_0c5d54e9",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2019-01-25T08:09:43Z",
+      "side": 1,
+      "message": "Yes, it should be 2.",
+      "parentUuid": "5ad0253b_ccdabc78",
+      "range": {
+        "startLine": 14,
+        "startChar": 16,
+        "endLine": 14,
+        "endChar": 17
+      },
+      "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ad0253b_ace7803f",
         "filename": "python-os-brick.spec",
         "patchSetId": 1
@@ -42,6 +66,23 @@
         "endLine": 161,
         "endChar": 58
       },
+      "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad0253b_ec72187c",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2019-01-25T08:09:43Z",
+      "side": 1,
+      "message": "-2 was never built so you can add the note about sg3_utils here and remove the previous note about 2.3.4-2.",
       "revId": "fb9c6b46c4b321fde637760641908b8babd747dd",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
