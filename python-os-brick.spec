@@ -10,8 +10,8 @@
 OpenStack Cinder brick library for managing local volume attaches
 
 Name:           python-%{pypi_name}
-Version:        2.3.4
-Release:        2%{?dist}
+Version:        2.3.5
+Release:        1%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
 License:        ASL 2.0
@@ -158,6 +158,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %endif
 
 %changelog
+* Fri Feb 15 2019 RDO <dev@lists.rdoproject.org> 2.3.5-1
+- Update to 2.3.5
+
 * Thu Jan 24 2019 Alan Bishop <abishop@redhat.com> 2.3.4-2
 - Add sysfsutils dependency
 - Add dependency on sg3_utils
