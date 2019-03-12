@@ -95,6 +95,12 @@ BuildRequires:  python%{pyver}-retrying
 %build
 %{pyver_build}
 
+%check
+%if 0%{?pyver} == 3
+rm -rf .testrepository
+%{__python3} setup.py test
+%endif
+
 %install
 %{pyver_install}
 
