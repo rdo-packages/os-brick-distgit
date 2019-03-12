@@ -75,6 +75,10 @@ BuildRequires:  python%{pyver}-requests >= 2.14.2
 BuildRequires:  python%{pyver}-six >= 1.10.0
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  python%{pyver}-oslo-privsep >= 1.23.0
+BuildRequires:  python%{pyver}-fixtures
+
+# Castellan is only for unit tests
+BuildRequires:  python%{pyver}-castellan
 
 %if 0%{?with_doc}
 BuildRequires:  python%{pyver}-openstackdocstheme
@@ -97,6 +101,10 @@ BuildRequires:  python%{pyver}-retrying
 
 %build
 %{pyver_build}
+
+%check
+rm -rf .testrepository
+%{pyver_bin} setup.py test
 
 %install
 %{pyver_install}
