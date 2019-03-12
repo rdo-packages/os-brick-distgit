@@ -48,6 +48,7 @@ Requires:       sysfsutils
 
 Requires:       python3-tenacity
 
+BuildRequires:  openstack-macros
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
 BuildRequires:  python3-pbr >= 2.0.0
@@ -62,6 +63,10 @@ BuildRequires:  python3-requests >= 2.14.2
 BuildRequires:  python3-six >= 1.10.0
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-oslo-privsep >= 1.32.0
+BuildRequires:  python3-testtools
+
+# Castellan is only for unit tests
+BuildRequires:  python3-castellan
 
 %if 0%{?with_doc}
 BuildRequires:  python3-openstackdocstheme
@@ -75,10 +80,14 @@ BuildRequires:  python3-tenacity
 
 %prep
 %autosetup -n %{pypi_name}-%{upstream_version} -S git
+%py_req_cleanup
 
 
 %build
 %{py3_build}
+
+%check
+python3 setup.py test
 
 %install
 %{py3_install}
