@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5aac298c_1fbeef0b",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-03-13T05:25:57Z",
+      "side": 1,
+      "message": "any reason running tests only for python3?",
+      "range": {
+        "startLine": 102,
+        "startChar": 0,
+        "endLine": 102,
+        "endChar": 19
+      },
+      "revId": "83f9853b3c923c566e1127b851b08e7237263026",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
