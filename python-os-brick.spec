@@ -47,7 +47,10 @@ Requires:       python%{pyver}-requests >= 2.14.2
 Requires:       python%{pyver}-six >= 1.10.0
 Requires:       python%{pyver}-oslo-privsep >= 1.23.0
 Requires:       python%{pyver}-os-win >= 3.0.0
+Requires:       cryptsetup
 Requires:       device-mapper-multipath
+Requires:       lvm2
+Requires:       nfs-utils
 Requires:       sg3_utils
 Requires:       sysfsutils
 
