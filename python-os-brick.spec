@@ -45,7 +45,7 @@ Requires:       python%{pyver}-oslo-service >= 1.24.0
 Requires:       python%{pyver}-oslo-utils >= 3.33.0
 Requires:       python%{pyver}-requests >= 2.14.2
 Requires:       python%{pyver}-six >= 1.10.0
-Requires:       python%{pyver}-oslo-privsep >= 1.23.0
+Requires:       python%{pyver}-oslo-privsep >= 1.32.0
 Requires:       python%{pyver}-os-win >= 3.0.0
 Requires:       cryptsetup
 Requires:       device-mapper-multipath
@@ -74,7 +74,7 @@ BuildRequires:  python%{pyver}-os-win
 BuildRequires:  python%{pyver}-requests >= 2.14.2
 BuildRequires:  python%{pyver}-six >= 1.10.0
 BuildRequires:  python%{pyver}-setuptools
-BuildRequires:  python%{pyver}-oslo-privsep >= 1.23.0
+BuildRequires:  python%{pyver}-oslo-privsep >= 1.32.0
 
 %if 0%{?with_doc}
 BuildRequires:  python%{pyver}-openstackdocstheme
