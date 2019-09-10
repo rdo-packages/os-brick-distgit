@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2203398e_fa257f49",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-09-10T05:09:34Z",
+      "side": 1,
+      "message": "this is not needed here.\nYou can add macro(%py_req_cleanup) in %prep section which cleans requirement.txt and test-requirement files. for that you need to add BuildRequires: openstack-macros",
+      "range": {
+        "startLine": 106,
+        "startChar": 0,
+        "endLine": 106,
+        "endChar": 22
+      },
+      "revId": "848cafa1b907805450860ba95dc86b8929bea1e6",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8fd6c7a2_72c104f9",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-09-10T05:09:34Z",
+      "side": 1,
+      "message": "can u change it to stestr-%{pyver} run same as it\u0027s done upstream:- https://github.com/openstack/os-brick/blob/master/tox.ini#L26\n\nAlso add BuildRequires: python%{pyver}-stestr",
+      "range": {
+        "startLine": 107,
+        "startChar": 0,
+        "endLine": 107,
+        "endChar": 26
+      },
+      "revId": "848cafa1b907805450860ba95dc86b8929bea1e6",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
