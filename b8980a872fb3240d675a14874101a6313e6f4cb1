@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "efbe3903_5f2d52b4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-09-10T04:26:17Z",
+      "side": 1,
+      "message": "os-brick requirements.txt says \u003e\u003d 1.23 https://github.com/openstack/os-brick/blob/master/requirements.txt#L11, i would say good to update upstream as well.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 39
+      },
+      "revId": "b8980a872fb3240d675a14874101a6313e6f4cb1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
