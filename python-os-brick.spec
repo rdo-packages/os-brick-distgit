@@ -19,7 +19,7 @@ OpenStack Cinder brick library for managing local volume attaches
 
 Name:           python-%{pypi_name}
 Version:        2.10.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
 License:        ASL 2.0
@@ -49,6 +49,7 @@ Requires:       python%{pyver}-oslo-privsep >= 1.32.0
 Requires:       python%{pyver}-os-win >= 3.0.0
 Requires:       cryptsetup
 Requires:       device-mapper-multipath
+Requires:       iscsi-initiator-utils
 Requires:       lvm2
 Requires:       nfs-utils
 Requires:       sg3_utils
@@ -123,6 +124,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %exclude %{pyver_sitelib}/os_brick/tests
 
 %changelog
+* Mon Sep 14 2020 Eric Harney <eharney@redhat.com> 2.10.4-2
+- Add iscsi-initiator-utils requirement
+
 * Wed Jun 24 2020 RDO <dev@lists.rdoproject.org> 2.10.4-1
 - Update to 2.10.4
 
