@@ -8,7 +8,7 @@ OpenStack Cinder brick library for managing local volume attaches
 
 Name:           python-%{pypi_name}
 Version:        3.0.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
 License:        ASL 2.0
@@ -28,8 +28,10 @@ Requires:       python3-pbr
 Requires:       python3-babel >= 2.3.4
 Requires:       python3-eventlet >= 0.18.2
 Requires:       python3-oslo-concurrency >= 3.26.0
+Requires:       python3-oslo-context >= 2.23.0
 Requires:       python3-oslo-i18n >= 3.15.3
 Requires:       python3-oslo-log >= 3.36.0
+Requires:       python3-oslo-serialization >= 2.29.0
 Requires:       python3-oslo-service >= 1.24.0
 Requires:       python3-oslo-utils >= 3.33.0
 Requires:       python3-requests >= 2.14.2
@@ -103,6 +105,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %exclude %{python3_sitelib}/os_brick/tests
 
 %changelog
+* Mon May 04 2020 Eric Harney <eharney@redhat.com> 3.0.1-2
+- Add missing oslo and iSCSI dependencies
+
 * Mon Apr 27 2020 RDO <dev@lists.rdoproject.org> 3.0.1-1
 - Update to 3.0.1
 
