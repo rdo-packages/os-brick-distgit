@@ -46,7 +46,7 @@ Requires:       nfs-utils
 Requires:       sg3_utils
 Requires:       sysfsutils
 
-Requires:       python3-retrying
+Requires:       python3-tenacity
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
@@ -68,7 +68,7 @@ BuildRequires:  python3-openstackdocstheme
 BuildRequires:  python3-sphinx
 %endif
 
-BuildRequires:  python3-retrying
+BuildRequires:  python3-tenacity
 
 %description -n python3-%{pypi_name}
 %{common_desc}
