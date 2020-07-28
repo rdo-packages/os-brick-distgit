@@ -41,6 +41,7 @@ Requires:       python3-os-win >= 3.0.0
 Requires:       cryptsetup
 Requires:       device-mapper-multipath
 Requires:       iscsi-initiator-utils
+Requires:       lsscsi
 Requires:       lvm2
 Requires:       nfs-utils
 Requires:       sg3_utils
