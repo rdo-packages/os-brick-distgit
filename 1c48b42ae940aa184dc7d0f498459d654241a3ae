@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "971b2932_7f226840",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 439
+      },
+      "writtenOn": "2020-09-14T13:47:20Z",
+      "side": 1,
+      "message": "Not sure of the history, but iscsi-initiator-utils was already a requirement (yes?), and this patch adds lssci",
+      "revId": "1c48b42ae940aa184dc7d0f498459d654241a3ae",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
