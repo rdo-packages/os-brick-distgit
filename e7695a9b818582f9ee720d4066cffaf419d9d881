@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "77e0de2e_156b031c",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 586
+      },
+      "writtenOn": "2020-09-15T11:14:36Z",
+      "side": 1,
+      "message": "Yatin had asked on PS 4 about using stestr here ... is there a reason not to do that?  (Asking because I have no idea but am keen to learn.)\n\nYou can see in the DLRN-rpmbuild-centos8 log that this is definitely running the unit tests, though.",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 21
+      },
+      "revId": "e7695a9b818582f9ee720d4066cffaf419d9d881",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
