@@ -22,6 +22,30 @@
       "revId": "e7695a9b818582f9ee720d4066cffaf419d9d881",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "19912362_8c4683c1",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 75
+      },
+      "writtenOn": "2020-09-15T18:58:59Z",
+      "side": 1,
+      "message": "We can do that, but I\u0027m not sure what benefit is gained by adding it as another build requirement?\n\nLooking around for examples, the python-oslo-config package uses stestr, python-oslo-concurrency does what I have here.",
+      "parentUuid": "77e0de2e_156b031c",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 21
+      },
+      "revId": "e7695a9b818582f9ee720d4066cffaf419d9d881",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
