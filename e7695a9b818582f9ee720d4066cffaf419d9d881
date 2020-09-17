@@ -46,6 +46,30 @@
       "revId": "e7695a9b818582f9ee720d4066cffaf419d9d881",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "542afe29_f35ef467",
+        "filename": "python-os-brick.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-09-17T09:57:22Z",
+      "side": 1,
+      "message": "The idea was to set what is being done upstream, it\u0027s possible some projects not following it like u see case with oslo-concurrency, we have seen issues in past that resultes us in synching with upstream.",
+      "parentUuid": "19912362_8c4683c1",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 21
+      },
+      "revId": "e7695a9b818582f9ee720d4066cffaf419d9d881",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
