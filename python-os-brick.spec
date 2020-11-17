@@ -65,7 +65,7 @@ BuildRequires:  openstack-macros
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
 BuildRequires:  python3-pbr >= 2.0.0
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  python3-reno
 BuildRequires:  python3-oslo-concurrency  >= 3.8.0
 BuildRequires:  python3-oslo-i18n >= 3.15.3
