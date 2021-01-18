@@ -38,18 +38,18 @@ Summary:        OpenStack Cinder brick library for managing local volume attache
 Provides:       os-brick = %{version}-%{release}
 
 Requires:       python3-pbr
-Requires:       python3-eventlet >= 0.25.1
-Requires:       python3-oslo-concurrency >= 3.26.0
-Requires:       python3-oslo-context >= 2.23.0
-Requires:       python3-oslo-i18n >= 3.24.0
-Requires:       python3-oslo-log >= 3.44.0
-Requires:       python3-oslo-serialization >= 2.29.0
-Requires:       python3-oslo-service >= 1.24.0
-Requires:       python3-oslo-utils >= 3.34.0
-Requires:       python3-requests >= 2.14.2
-Requires:       python3-six >= 1.10.0
-Requires:       python3-oslo-privsep >= 1.32.0
-Requires:       python3-os-win >= 3.0.0
+Requires:       python3-eventlet >= 0.26.1
+Requires:       python3-oslo-concurrency >= 4.3.0
+Requires:       python3-oslo-context >= 3.1.1
+Requires:       python3-oslo-i18n >= 5.0.1
+Requires:       python3-oslo-log >= 4.4.0
+Requires:       python3-oslo-serialization >= 4.0.1
+Requires:       python3-oslo-service >= 2.4.0
+Requires:       python3-oslo-utils >= 4.7.0
+Requires:       python3-requests >= 2.23.0
+Requires:       python3-six >= 1.15.0
+Requires:       python3-oslo-privsep >= 2.4.0
+Requires:       python3-os-win >= 5.1.0
 Requires:       cryptsetup
 Requires:       device-mapper-multipath
 Requires:       iscsi-initiator-utils
@@ -64,18 +64,18 @@ Requires:       python3-tenacity
 BuildRequires:  openstack-macros
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
-BuildRequires:  python3-pbr >= 2.0.0
+BuildRequires:  python3-pbr >= 5.5.0
 BuildRequires:  git-core
 BuildRequires:  python3-reno
-BuildRequires:  python3-oslo-concurrency  >= 3.8.0
-BuildRequires:  python3-oslo-i18n >= 3.15.3
-BuildRequires:  python3-oslo-log >= 3.36.0
-BuildRequires:  python3-oslo-service >= 1.24.0
+BuildRequires:  python3-oslo-concurrency  >= 4.3.0
+BuildRequires:  python3-oslo-i18n >= 5.0.1
+BuildRequires:  python3-oslo-log >= 4.4.0
+BuildRequires:  python3-oslo-service >= 2.4.0
 BuildRequires:  python3-os-win
-BuildRequires:  python3-requests >= 2.14.2
-BuildRequires:  python3-six >= 1.10.0
+BuildRequires:  python3-requests >= 2.23.0
+BuildRequires:  python3-six >= 1.15.0
 BuildRequires:  python3-setuptools
-BuildRequires:  python3-oslo-privsep >= 1.32.0
+BuildRequires:  python3-oslo-privsep >= 2.4.0
 BuildRequires:  python3-oslo-vmware
 BuildRequires:  python3-testtools
 
