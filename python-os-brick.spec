@@ -64,6 +64,7 @@ Requires:       python3-tenacity
 BuildRequires:  openstack-macros
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
+BuildRequires:  python3-fixtures
 BuildRequires:  python3-pbr >= 5.5.0
 BuildRequires:  git-core
 BuildRequires:  python3-reno
