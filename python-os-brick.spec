@@ -38,18 +38,17 @@ Summary:        OpenStack Cinder brick library for managing local volume attache
 Provides:       os-brick = %{version}-%{release}
 
 Requires:       python3-pbr
-Requires:       python3-eventlet >= 0.26.1
-Requires:       python3-oslo-concurrency >= 4.3.0
+Requires:       python3-eventlet >= 0.30.0
+Requires:       python3-oslo-concurrency >= 4.4.0
 Requires:       python3-oslo-context >= 3.1.1
 Requires:       python3-oslo-i18n >= 5.0.1
 Requires:       python3-oslo-log >= 4.4.0
-Requires:       python3-oslo-serialization >= 4.0.1
-Requires:       python3-oslo-service >= 2.4.0
-Requires:       python3-oslo-utils >= 4.7.0
-Requires:       python3-requests >= 2.22.0
-Requires:       python3-six >= 1.15.0
+Requires:       python3-oslo-serialization >= 4.1.0
+Requires:       python3-oslo-service >= 2.5.0
+Requires:       python3-oslo-utils >= 4.8.0
+Requires:       python3-requests >= 2.25.1
 Requires:       python3-oslo-privsep >= 2.4.0
-Requires:       python3-os-win >= 5.1.0
+Requires:       python3-os-win >= 5.4.0
 Requires:       cryptsetup
 Requires:       device-mapper-multipath
 Requires:       iscsi-initiator-utils
@@ -68,13 +67,12 @@ BuildRequires:  python3-fixtures
 BuildRequires:  python3-pbr >= 5.5.0
 BuildRequires:  git-core
 BuildRequires:  python3-reno
-BuildRequires:  python3-oslo-concurrency  >= 4.3.0
+BuildRequires:  python3-oslo-concurrency  >= 4.4.0
 BuildRequires:  python3-oslo-i18n >= 5.0.1
 BuildRequires:  python3-oslo-log >= 4.4.0
-BuildRequires:  python3-oslo-service >= 2.4.0
+BuildRequires:  python3-oslo-service >= 2.5.0
 BuildRequires:  python3-os-win
-BuildRequires:  python3-requests >= 2.22.0
-BuildRequires:  python3-six >= 1.15.0
+BuildRequires:  python3-requests >= 2.25.1
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-oslo-privsep >= 2.4.0
 BuildRequires:  python3-oslo-vmware
