@@ -133,3 +133,4 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %exclude %{python3_sitelib}/os_brick/tests
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/os-brick/commit/91a1ccaa843c94990bd9c229e7abfb086b796202
