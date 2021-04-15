@@ -18,8 +18,8 @@
 OpenStack Cinder brick library for managing local volume attaches
 
 Name:           python-%{pypi_name}
-Version:        2.10.4
-Release:        3%{?dist}
+Version:        2.10.6
+Release:        1%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
 License:        ASL 2.0
@@ -125,6 +125,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %exclude %{pyver_sitelib}/os_brick/tests
 
 %changelog
+* Thu Apr 15 2021 RDO <dev@lists.rdoproject.org> 2.10.6-1
+- Update to 2.10.6
+
 * Wed Sep 16 2020 Eric Harney <eharney@redhat.com> 2.10.4-3
 - Add lsscsi requirement
 
