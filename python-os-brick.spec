@@ -55,6 +55,7 @@ Requires:       iscsi-initiator-utils
 Requires:       lsscsi >= 0.29
 Requires:       lvm2
 Requires:       nfs-utils
+Requires:       nvme-cli
 Requires:       sg3_utils
 Requires:       sysfsutils
 
