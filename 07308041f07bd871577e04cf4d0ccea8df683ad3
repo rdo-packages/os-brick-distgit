@@ -1,0 +1,9 @@
+Code-Review+2: Alan Bishop <abishop@redhat.com>
+Code-Review+2: Luigi Toscano <ltoscano@redhat.com>
+Workflow+1: Luigi Toscano <ltoscano@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Thu, 17 Jun 2021 08:38:37 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/os-brick-distgit/+/34182
+Project: openstack/os-brick-distgit
+Branch: refs/heads/rpm-master
