@@ -58,6 +58,7 @@ Requires:       nfs-utils
 Requires:       nvme-cli
 Requires:       sg3_utils
 Requires:       sysfsutils
+Requires:       systemd-udev
 
 Requires:       python3-tenacity
 
