@@ -19,7 +19,7 @@ OpenStack Cinder brick library for managing local volume attaches
 
 Name:           python-%{pypi_name}
 Version:        2.10.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
 License:        ASL 2.0
@@ -55,6 +55,9 @@ Requires:       lvm2
 Requires:       nfs-utils
 Requires:       sg3_utils
 Requires:       sysfsutils
+%if 0%{?rhel} > 7
+Requires:       systemd-udev
+%endif
 
 # Handle python2 exception
 %if %{pyver} == 2
@@ -125,6 +128,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %exclude %{pyver_sitelib}/os_brick/tests
 
 %changelog
+* Wed Aug 25 2021 Alan Bishop <abishop@redhat.com> 2.10.7-2
+- Require systemd-udev for rhel > 7
+
 * Thu May 13 2021 RDO <dev@lists.rdoproject.org> 2.10.7-1
 - Update to 2.10.7
 
