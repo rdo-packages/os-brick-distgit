@@ -38,7 +38,7 @@ Summary:        OpenStack Cinder brick library for managing local volume attache
 Provides:       os-brick = %{version}-%{release}
 
 Requires:       python3-pbr
-Requires:       python3-eventlet >= 0.30.0
+Requires:       python3-eventlet >= 0.30.1
 Requires:       python3-oslo-concurrency >= 4.4.0
 Requires:       python3-oslo-context >= 3.1.1
 Requires:       python3-oslo-i18n >= 5.0.1
