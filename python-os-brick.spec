@@ -39,16 +39,16 @@ Provides:       os-brick = %{version}-%{release}
 
 Requires:       python3-pbr
 Requires:       python3-eventlet >= 0.30.1
-Requires:       python3-oslo-concurrency >= 4.4.0
-Requires:       python3-oslo-context >= 3.1.1
-Requires:       python3-oslo-i18n >= 5.0.1
-Requires:       python3-oslo-log >= 4.4.0
-Requires:       python3-oslo-serialization >= 4.1.0
-Requires:       python3-oslo-service >= 2.5.0
-Requires:       python3-oslo-utils >= 4.8.0
+Requires:       python3-oslo-concurrency >= 4.5.0
+Requires:       python3-oslo-context >= 3.4.0
+Requires:       python3-oslo-i18n >= 5.1.0
+Requires:       python3-oslo-log >= 4.6.1
+Requires:       python3-oslo-serialization >= 4.2.0
+Requires:       python3-oslo-service >= 2.8.0
+Requires:       python3-oslo-utils >= 4.12.1
 Requires:       python3-requests >= 2.25.1
-Requires:       python3-oslo-privsep >= 2.4.0
-Requires:       python3-os-win >= 5.4.0
+Requires:       python3-oslo-privsep >= 2.6.2
+Requires:       python3-os-win >= 5.5.0
 Requires:       cryptsetup
 Requires:       device-mapper-multipath
 Requires:       iscsi-initiator-utils
@@ -66,7 +66,7 @@ BuildRequires:  openstack-macros
 BuildRequires:  python3-devel
 BuildRequires:  python3-ddt
 BuildRequires:  python3-fixtures
-BuildRequires:  python3-pbr >= 5.5.0
+BuildRequires:  python3-pbr >= 5.8.0
 BuildRequires:  git-core
 BuildRequires:  python3-reno
 BuildRequires:  python3-oslo-concurrency  >= 4.4.0
