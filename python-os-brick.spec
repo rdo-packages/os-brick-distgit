@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x4c29ff0e437f3351fd82bdf47c5a3bc787dc7035
+%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global pypi_name os-brick
 
@@ -9,7 +9,7 @@
 OpenStack Cinder brick library for managing local volume attaches
 
 Name:           python-%{pypi_name}
-Version:        4.3.2
+Version:        4.3.3
 Release:        1%{?dist}
 Summary:        OpenStack Cinder brick library for managing local volume attaches
 
@@ -132,6 +132,9 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 %exclude %{python3_sitelib}/os_brick/tests
 
 %changelog
+* Thu Mar 10 2022 RDO <dev@lists.rdoproject.org> 4.3.3-1
+- Update to 4.3.3
+
 * Thu Sep 02 2021 RDO <dev@lists.rdoproject.org> 4.3.2-1
 - Update to 4.3.2
 
