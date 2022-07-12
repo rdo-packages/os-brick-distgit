@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99a75263_1502d33d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 141
+      },
+      "writtenOn": "2022-07-12T18:21:28Z",
+      "side": 1,
+      "message": "I\u0027m not sure why the centos stream 8 jobs are failing. The change shouldn\u0027t affect them.",
+      "revId": "1fddbf2102d03214939caf38dfc3b7be5494757e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
