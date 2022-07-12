@@ -16,6 +16,23 @@
       "message": "I\u0027m not sure why the centos stream 8 jobs are failing. The change shouldn\u0027t affect them.",
       "revId": "1fddbf2102d03214939caf38dfc3b7be5494757e",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff46d420_f2177129",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 141
+      },
+      "writtenOn": "2022-07-12T19:06:05Z",
+      "side": 1,
+      "message": "Adding more people; it seems we have a problem here, I\u0027ve also tried a dummy change and it fails https://review.rdoproject.org/r/c/openstack/os-brick-distgit/+/43973",
+      "revId": "1fddbf2102d03214939caf38dfc3b7be5494757e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
