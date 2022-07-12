@@ -5,6 +5,8 @@
 
 %global with_doc 1
 
+# guard for Red Hat OpenStack Platform supported cinder
+%global rhosp 0
 %global common_desc \
 OpenStack Cinder brick library for managing local volume attaches
 
@@ -56,7 +58,9 @@ Requires:       lsscsi >= 0.29
 Requires:       lvm2
 Requires:       nfs-utils
 Requires:       sg3_utils
+%if 0%{?rhosp} == 0
 Requires:       sysfsutils
+%endif
 Requires:       systemd-udev
 
 Requires:       python3-tenacity
