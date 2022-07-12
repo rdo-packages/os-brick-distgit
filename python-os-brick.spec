@@ -6,7 +6,7 @@
 %global with_doc 1
 
 %global common_desc \
-OpenStack Cinder brick library for managing local volume attaches
+OpenStack Cinder nice brick library for managing local volume attaches
 
 Name:           python-%{pypi_name}
 Version:        4.3.3
