@@ -50,6 +50,23 @@
       "message": "Looks like the problem is in the fixtures module:\n\n  File \"/usr/lib/python3.6/site-packages/fixtures/_fixtures/mockpatch.py\", line 18, in \u003cmodule\u003e\n      import extras\n  ModuleNotFoundError: No module named \u0027extras\u0027\n\nAnd it happens because fixtures doesn\u0027t have the extras module as a requirement [1].\n\nSo we either include the extras for our testing or update fixtures to a 4.0.0 version or later.\n\n[1]: https://github.com/testing-cabal/fixtures/commit/f8df2192bf1190ff21a3067bb9e132b6db85191e",
       "revId": "1fddbf2102d03214939caf38dfc3b7be5494757e",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "257a105e_799bf5f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 141
+      },
+      "writtenOn": "2022-07-15T09:16:50Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "1fddbf2102d03214939caf38dfc3b7be5494757e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
