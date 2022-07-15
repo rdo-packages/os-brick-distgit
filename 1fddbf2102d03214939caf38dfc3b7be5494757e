@@ -101,6 +101,24 @@
       "message": "we have been providing it in cs9 as a dep in RDO. Is it not longer required?. If so, may we simply remove it as a dep inconditionally? or it\u0027s feature-specific?",
       "revId": "1fddbf2102d03214939caf38dfc3b7be5494757e",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "767b16d8_6bd64a78",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 141
+      },
+      "writtenOn": "2022-07-15T10:16:43Z",
+      "side": 1,
+      "message": "It is still required for RDO. It won\u0027t be required in zed for everyone, but it will require a new os-brick release.",
+      "parentUuid": "ac2b556a_3b7d2a82",
+      "revId": "1fddbf2102d03214939caf38dfc3b7be5494757e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
