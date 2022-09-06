@@ -61,6 +61,7 @@ Requires:       sysfsutils
 Requires:       systemd-udev
 
 Requires:       python3-tenacity
+Requires:       python3-oslo-config >= 8.1.0
 
 BuildRequires:  openstack-macros
 BuildRequires:  python3-devel
@@ -78,6 +79,7 @@ BuildRequires:  python3-requests >= 2.25.1
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-oslo-privsep >= 2.4.0
 BuildRequires:  python3-oslo-vmware
+BuildRequires:  python3-oslo-config
 BuildRequires:  python3-testtools
 
 # Castellan is only for unit tests
