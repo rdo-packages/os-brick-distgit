@@ -158,3 +158,4 @@ mv %{buildroot}/usr/etc/os-brick/rootwrap.d/*.filters %{buildroot}%{_datarootdir
 * Mon Mar 15 2021 RDO <dev@lists.rdoproject.org> 4.3.0-1
 - Update to 4.3.0
 
+
